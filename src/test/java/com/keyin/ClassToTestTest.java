@@ -18,15 +18,12 @@ public class ClassToTestTest {
         Assertions.assertEquals(listOfStrings.size(), 1);
 
         listOfStrings = objectUnderTest.methodToTest("test");
-
         Assertions.assertEquals(listOfStrings.size(), 1);
 
         listOfStrings = objectUnderTest.methodToTest("Test");
-
         Assertions.assertEquals(listOfStrings.size(), 1);
 
         listOfStrings = objectUnderTest.methodToTest("Testing");
-
         Assertions.assertEquals(listOfStrings.size(), 2);
 
         Assertions.assertTrue(listOfStrings.contains("test"));
